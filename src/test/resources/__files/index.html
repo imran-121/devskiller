@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Selenium test page</title>
+    <script type="text/javascript">
+        function generateLink() {
+			var container = document.getElementsByTagName('div')[0];
+			var link = document.createElement('a');
+			link.setAttribute('href', "https://devskiller.com/");
+			link.innerHTML = 'Go somewhere!';
+			container.appendChild(link);
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>Hello world!</h1>
+    <button onclick="generateLink()">Click me!</button>
+</div>
+</body>
+</html>
